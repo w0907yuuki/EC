@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>登録</title>
+</head>
+
+<!--ラベルを表示-->
+<!--ラベルを中央寄せにする-->
+<div id="lblRegister">
+	<label><font size="7">登録</font></label>
+</div>
+
+<style>
+#lblRegister>label {
+	text-align: center;
+	display: block;
+}
+
+.center {
+	width: 80%; /* 固定の幅を設定します */
+	margin: auto; /* 左右のマージンを自動的に等しくします */
+}
+</style>
+<body>
+	<form action="ServRegister" method="post">
+		<!--フォーム内を中央寄せにする-->
+		<div style="width: 400px; margin: auto;">
+			<!--テキストボックス、ボタン設定-->
+			<p>
+				<font size="5"> ID<br> <input type="text"
+					name="txtRegisterID" size="49"></font>
+			</p>
+			<p>
+				<font size="5"> パスワード<br> <input type="text"
+					name="txtPassword" size="49"></font><br>
+				<br>
+			</p>
+			<p>
+				<font size="5"> <input type="submit"
+					style="width: 95%; padding: 8px; font-size: 20px;" value="会員登録"
+					id="btn_Login"></font><br>
+			</p>
+		</div>
+	</form>
+	<!--登録画面先リンクを中央寄せ-->
+	<!--登録画面先リンクを設置-->
+	<div align="center">
+		<a href="Login.html">ログインする</a>
+	</div>
+
+</body>
+</html>

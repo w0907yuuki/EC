@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>商品登録</title>
+	</head>
+	<div id="lblLogin">
+		<label><font size="7">商品登録</font></label>
+	</div>
+	
+	<style>
+	#lblLogin>label {
+		text-align: center;
+		display: block;
+	}
+	
+	.center {
+		width: 80%; /* 固定の幅を設定します */
+		margin: auto; /* 左右のマージンを自動的に等しくします */
+	}
+	</style>
+	<body>
+		<form action="ServProduct" method="post"enctype="multipart/form-data">
+			<!--フォーム内を中央寄せにする-->
+			<div style="width: 400px; margin: auto;">
+				<!--テキストボックス、ボタン設定-->
+				<p>
+					<font size="5"> 商品名<br> <input type="text"
+						name="txtName" size="49"></font>
+				</p>
+				<p>
+					<font size="5"> 値段<br> <input type="number"
+						name="intPrice" size="49"></font>
+					<br>
+				</p>
+				<p>
+					<font size="5"> 出品者<br> <input type="text"
+						name="txtSeller" size="49"></font>
+					<br>
+				</p>
+				<p>
+					<font size="5"> カテゴリー<br> <input type="text"
+						name="txtCategory" size="49"></font>
+					<br>
+				</p>
+				<div>
+					<label for="t_message">説明欄</label><br>
+					<textarea rows="10" cols="50" id="txtFreetext" name="txtFreetext" placeholder="補足等　例　傷あり　中古　等"></textarea>
+				</div>
+				<p>
+				 <input type="file" name="imageFile"><br>
+				 </p>
+				<p>
+					<font size="5"> <input type="submit"
+						style="width: 95%; padding: 8px; font-size: 20px;" value="登録"
+						id="btn_Login"></font>
+				</p>
+			</div>
+		</form>
+	</body>
+</html>
